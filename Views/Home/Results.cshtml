@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+    <link rel="stylesheet" href="~/css/stylesheet.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Submitted Info</h1>
+        <div class="submission">
+            <div class="subTitle">Name:</div>
+            <div class="subData">@ViewBag.fullname</div>
+        </div>
+        <div class="submission">
+            <div class="subTitle">Dojo Location:</div>
+            <div class="subData">@ViewBag.location</div>
+        </div>
+        <div class="submission">
+            <div class="subTitle">Favorite Language:</div>
+            <div class="subData">@ViewBag.language</div>
+        </div>
+        <div class="submission">
+            <div class="subTitle">Comment:</div>
+            <div class="subData">@ViewBag.comment</div>
+        </div>
+    </div>
+</body>
+</html>
