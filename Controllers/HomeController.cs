@@ -15,13 +15,9 @@ namespace Portfolio
 
         [HttpPost]
         [Route("Results")]
-        public IActionResult Results(string location, string fullname, string language, string comment)
+        public IActionResult Results(Ninja ninja)
         {
-            ViewBag.location = location;
-            ViewBag.fullname = fullname;
-            ViewBag.language = language;
-            ViewBag.comment = comment;
-            return View();
+            return View(ninja);
         }
     }
 }

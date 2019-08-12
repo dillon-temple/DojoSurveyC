@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="~/css/stylesheet.css">
 </head>
 <body>
+
+@model Ninja
+
     <div class="wrapper">
         <h1>Submitted Info</h1>
         <div class="submission">
             <div class="subTitle">Name:</div>
-            <div class="subData">@ViewBag.fullname</div>
+            <div class="subData">@Model.Name</div>
         </div>
         <div class="submission">
             <div class="subTitle">Dojo Location:</div>
-            <div class="subData">@ViewBag.location</div>
+            <div class="subData">@Model.Location</div>
         </div>
         <div class="submission">
             <div class="subTitle">Favorite Language:</div>
-            <div class="subData">@ViewBag.language</div>
+            <div class="subData">@Model.Language</div>
         </div>
         <div class="submission">
             <div class="subTitle">Comment:</div>
-            <div class="subData">@ViewBag.comment</div>
+            <div class="subData">@Model.Comment</div>
         </div>
     </div>
 </body>
